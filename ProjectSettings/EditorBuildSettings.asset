@@ -8,4 +8,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/1. CubeRunner2D/Scenes/CubeRunner2D.unity
     guid: 2cda990e2423bbf4892e6590ba056729
+  - enabled: 1
+    path: Assets/5. ShootingGround/Scenes/ShootingGround.unity
+    guid: ad844e8d655894444ad4465f8613db46
+  - enabled: 1
+    path: Assets/6. ShootAndRun/Scenes/ShootAndRun.unity
+    guid: 178635ccd559e4f45980434fc436e37c
   m_configObjects: {}
