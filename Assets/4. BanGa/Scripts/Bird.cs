@@ -13,7 +13,7 @@ namespace BanGa
 
         Rigidbody2D m_rb;
         bool m_isMoveLeftOnStart;
-        bool m_isDead;
+        //bool m_isDead;
 
         private void Awake()
         {
@@ -47,7 +47,7 @@ namespace BanGa
 
         public void Die()
         {
-            m_isDead = true;
+            //m_isDead = true;
 
             GameManager.Ins.BirdKilled++;
             GameGUIManager.Ins.UpdateKilledCounting(GameManager.Ins.BirdKilled);
