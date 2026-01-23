@@ -1,14 +1,13 @@
-using BanGa;
 using UnityEngine;
 
 namespace SOSystem
 {
     public class VelocityAtStart : MonoBehaviour
     {
-        [Header(HeaderNames.Reference)]
+        [Header("Reference")]
         [SerializeField] private Rigidbody2D controlRigidbody;
 
-        [Header(HeaderNames.Config)]
+        [Header("Config")]
         [SerializeField] private Vector2 randomVelocityRange;
         [SerializeField] private Direction direction;
 

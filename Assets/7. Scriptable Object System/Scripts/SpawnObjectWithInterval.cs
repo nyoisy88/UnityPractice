@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.Events;
 namespace SOSystem
 {
     public class SpawnObjectWithInterval : MonoBehaviour
@@ -8,6 +9,9 @@ namespace SOSystem
         [SerializeField] GameObject prefab;
         [SerializeField] Vector2 randomIntervalRange;
         [SerializeField] float randomYRange;
+
+        [Header("Event")]
+        [SerializeField] private IntegerVariableSO spawnedObjectCountVar;
 
         [Header("Validation")]
         [SerializeField] bool isFailedConfig;
@@ -43,6 +47,7 @@ namespace SOSystem
             var spawnPos = transform.position;
             spawnPos.y += UnityEngine.Random.Range(-randomYRange, randomYRange);
             spawnGO.transform.position = spawnPos;
+            spawnedObjectCountVar.Value++;
         }
     }
 }

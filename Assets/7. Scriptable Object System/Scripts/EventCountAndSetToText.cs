@@ -4,10 +4,10 @@ namespace SOSystem
 {
     public class EventCountAndSetToText : MonoBehaviour
     {
-        [Header(HeaderNames.Reference)]
+        [Header("Reference")]
         [SerializeField] private TextMeshProUGUI displayText;
 
-        [Header(HeaderNames.Config)]
+        [Header("Config")]
         [SerializeField] private EventID eventID;
         [SerializeField] private string textFormat;
 
